@@ -5,14 +5,20 @@ package javaapplication1
  * @author kazuhito
  */
 class HelloGitOutputer {
+    
+    static List<String> buff = []
+    
     static void main(String[] s) {
         gitOutputLogic()
     }
     
     static void gitOutputLogic() {
-        println 'miura'
-        println 'stadying git command ! lets Develop!'
+        printlnB 'miura'
+        printlnB 'stadying git command ! lets Develop!'
     }
     
+    static void printlnB(String s) {
+        buff << s
+        println s
+    }
 }
-
