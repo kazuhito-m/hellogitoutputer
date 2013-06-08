@@ -21,6 +21,7 @@ class HelloGitOutputerTest {
     }
     @Test
     public void mainIsNagareru() {
+        assert sut != null
         sut.gitOutputLogic()
     }
 }
