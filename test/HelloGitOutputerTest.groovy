@@ -16,12 +16,23 @@ class HelloGitOutputerTest {
     HelloGitOutputer sut
     
     @Before
-    public void setUp() {
+    void setUp() {
         sut = HelloGitOutputer
     }
     @Test
-    public void mainIsNagareru() {
+    void mainIsNagareru() {
         assert sut != null
         sut.gitOutputLogic()
+    }
+    
+    @Test
+    void testPrintB() {
+        // act 
+        sut.printlnB "one"
+        sut.printlnB "two"
+        // assert
+        assert sut.buff.length()
+        assert sut.buff[0] == 'one'
+        assert sut.buff[0] == 'two'
     }
 }
