@@ -1,3 +1,1 @@
-Manifest-Version: 1.0
-X-COMMENT: Main-Class will be added automatically by build
-
+2013/06/08 「はじめてのGit 〜たぶん関西でいちばんゆるいGit入門（リプライズ）」にて、NetBeansのお試しもかねて、でたらめなプログラムを適当にあげたものです。
