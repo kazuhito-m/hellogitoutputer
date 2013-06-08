@@ -19,9 +19,11 @@ class HelloGitOutputerTest {
     public void setUp() {
         sut = HelloGitOutputer
     }
+    
     @Test
     public void mainIsNagareru() {
         assert sut != null
         sut.gitOutputLogic()
+        println 'test miura'
     }
 }
